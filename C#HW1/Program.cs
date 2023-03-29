@@ -26,30 +26,47 @@
 // Напишите программу, которая принимает на вход три числа 
 // и выдаёт максимальное из этих чисел.
 
-int max = 0;
-Console.Write("Введите первое число: ");
-int a = int.Parse(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int b = int.Parse(Console.ReadLine());
-Console.Write("Введите третье число: ");
-int c = int.Parse(Console.ReadLine());
+//int max = 0;
+//Console.Write("Введите первое число: ");
+//int a = int.Parse(Console.ReadLine());
+//Console.Write("Введите второе число: ");
+//int b = int.Parse(Console.ReadLine());
+//Console.Write("Введите третье число: ");
+//int c = int.Parse(Console.ReadLine());
 
-if (a > b)
+//if (a > b)
+//{
+//    max = a;
+//}
+//else
+//{
+//    max = b;
+//}
+//if (max > c)
+//{
+//    Console.WriteLine("Максимальное число: ");
+//    Console.Write(max);
+//}
+//else
+//{
+//    max = c;
+//    Console.WriteLine("Максимальное число: ");
+//    Console.Write(max);
+//}
+
+// Напишите программу, которая на вход принимает число и выдаёт, 
+// является ли число чётным (делится ли оно на два без остатка).
+
+Console.Write("Введите число: ");
+double a = double.Parse(Console.ReadLine());
+
+if (a % 2 == 0)
 {
-    max = a;
+    Console.Write(a);
+    Console.WriteLine(" - Четное число");
 }
 else
 {
-    max = b;
-}
-if (max > c)
-{
-    Console.WriteLine("Максимальное число: ");
-    Console.Write(max);
-}
-else
-{
-    max = c;
-    Console.WriteLine("Максимальное число: ");
-    Console.Write(max);
+    Console.Write(a);
+    Console.WriteLine(" - Нечетное число");
 }
